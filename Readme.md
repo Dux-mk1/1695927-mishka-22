@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Aleksandr Sundukov](https://up.htmlacademy.ru/adaptive/22/user/1695927).
-* Наставник: `Неизвестно`.
+* Наставник: '[Julia Antonova](https://htmlacademy.ru/profile/id39082)'.
 
 ---
 
