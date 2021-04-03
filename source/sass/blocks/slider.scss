@@ -1,0 +1,39 @@
+.slider__controls {
+  border: 1px solid #ececec;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 260px;
+  min-height: 50px;
+}
+
+.slider__toggle {
+  border: none;
+  background-color: white;
+
+  &--previous {
+    background-image: url("../../img/index-mobile/huge-arrow-left.svg");
+    width: 50px;
+    height: 26px;
+    position: relative;
+  }
+
+  &--next {
+    background-image: url("../../img/index-mobile/huge-arrow-right.svg");
+    width: 50px;
+    height: 26px;
+  }
+
+  &--previous::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url("../../img/index-mobile/divider.svg");
+    width: 1px;
+    height: 50px;
+    top: -12px;
+    right: -38px;
+  }
+}

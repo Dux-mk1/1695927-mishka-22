@@ -1,0 +1,13 @@
+.social {
+  width: 142px;
+  height: 38px;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,55 @@
+.contacts {
+  background-color: white;
+}
+
+.contacts__wrapper {
+  padding: 38px 30px 39px 30px;
+}
+
+.contacts__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__content {
+  margin-bottom: 62px;
+}
+
+.contacts__content-first-column {
+  width: 76px;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__content-second-column {
+  width: 183px;
+  position: relative;
+
+  &--layer::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../../img/index-mobile/layer-blue.svg");
+    width: 167px;
+    height: 1px;
+    top: 30px;
+    left: 1px;
+  }
+
+  &--area {
+    top: 29px;
+  }
+}
+
+.contacts__content-email {
+  text-decoration: none;
+  color: black;
+}
+
+.contacts__map {
+  position: relative;
+  left: -30px;
+  margin-bottom: 42px;
+}

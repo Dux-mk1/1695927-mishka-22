@@ -1,0 +1,91 @@
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list__item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 83px;
+  position: relative;
+
+  &:last-child {
+    margin: 0;
+    padding: 0;
+  }
+
+  &--eco::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../../img/index-mobile/advantages-list/icon-1.svg");
+    width: 33px;
+    height: 38px;
+    top: -49px;
+    left: 0;
+    display: block;
+  }
+
+  &--price::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../../img/index-mobile/advantages-list/icon-3.svg");
+    width: 47px;
+    height: 27px;
+    top: -53px;
+    left: 0;
+    display: block;
+  }
+
+  &--like::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../../img/index-mobile/advantages-list/icon-5.svg");
+    width: 34px;
+    height: 27px;
+    top: -48px;
+    left: 0;
+    display: block;
+  }
+
+  &--handmade::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../../img/index-mobile/advantages-list/icon-2.svg");
+    width: 35px;
+    height: 34px;
+    top: -51px;
+    left: 0;
+    display: block;
+  }
+
+  &--support::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../../img/index-mobile/advantages-list/icon-4.svg");
+    width: 55px;
+    height: 23px;
+    top: -52px;
+    left: 0;
+    display: block;
+  }
+
+  &--packaging::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../../img/index-mobile/advantages-list/icon-6.svg");
+    width: 33px;
+    height: 32px;
+    top: -52px;
+    left: 0;
+    display: block;
+  }
+}

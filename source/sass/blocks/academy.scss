@@ -1,0 +1,21 @@
+.academy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.academy__link {
+  text-decoration: none;
+  color: black;
+}
+
+.academy__text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+  position: relative;
+  top: -15px;
+  margin-right: 27px;
+}
