@@ -9,14 +9,13 @@
 
 .site-list__link {
   color: black;
-  text-decoration: none;
   position: relative;
 
   &--search::before {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
-    background-image: url("../../img/header/search.svg");
+    background-image: url("../img/header/search.svg");
     width: 18px;
     height: 18px;
     left: -30px;
@@ -28,7 +27,7 @@
     content: "";
     position: absolute;
     background-repeat: no-repeat;
-    background-image: url("../../img/header/cart.svg");
+    background-image: url("../img/header/cart.svg");
     width: 21px;
     height: 18px;
     left: -30px;
