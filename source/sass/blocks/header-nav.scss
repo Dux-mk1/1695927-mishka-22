@@ -1,10 +1,18 @@
 .header-nav {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
 }
 
+.header-nav__wrapper {
+  width: 260px;
+}
+
 .header-nav__list {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  flex-direction: column;
 }

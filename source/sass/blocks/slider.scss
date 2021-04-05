@@ -1,5 +1,5 @@
 .slider__controls {
-  border: 1px solid #ececec;
+  border: 1px solid $lines-color;
   display: flex;
   align-content: center;
   align-items: center;
@@ -10,7 +10,9 @@
 
 .slider__toggle {
   border: none;
-  background-color: white;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
 
   &--previous {
     background-image: url("../img/index-mobile/huge-arrow-left.svg");

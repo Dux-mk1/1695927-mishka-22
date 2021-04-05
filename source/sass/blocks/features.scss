@@ -1,15 +1,16 @@
 .features {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   display: flex;
 }
 
-.features__column-character {
+.features__table-head {
   width: 97px;
+  text-align: left;
+  font-weight: 400;
 }
 
-.features__column-mean {
+.features__table-description {
   width: 162px;
 }

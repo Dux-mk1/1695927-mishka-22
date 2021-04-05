@@ -1,20 +1,14 @@
-.academy {
+.academy__link {
+  color: $black;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
 }
 
-.academy__link {
-  color: black;
-}
-
 .academy__text {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 19px;
   line-height: 18px;
-  position: relative;
-  top: -15px;
   margin-right: 27px;
 }

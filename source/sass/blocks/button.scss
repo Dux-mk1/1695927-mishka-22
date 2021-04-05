@@ -1,16 +1,15 @@
 .button {
   display: flex;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  border: 2px solid #444444;
+  border: 2px solid $special-black;
   box-sizing: border-box;
   text-transform: uppercase;
-  color: black;
-  width: 260px;
+  color: $special-black;
+  min-width: 192px;
   min-height: 52px;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: $background-color;
 }
