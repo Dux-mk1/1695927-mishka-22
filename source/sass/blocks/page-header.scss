@@ -16,16 +16,15 @@
 .page-header__logo {
   display: flex;
   margin-right: 0;
+  transform: translate(10px, 0);
 }
 
 .page-header__toggle {
-  display: flex;
-  position: relative;
   border: none;
   width: 21px;
   height: 20px;
   background: url("../img/header/menu-close.svg");
-  right: -67px;
   margin: 0;
   padding: 0;
+  transform: translateX(77px);
 }

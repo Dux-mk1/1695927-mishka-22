@@ -6,12 +6,13 @@
   background-repeat: no-repeat;
   background-image: url("../img/index-mobile/hero-mobile@2x1.jpg");
   height: 300px;
+  transform: translateY(-17px);
 }
 
 .hero__wrapper {
   text-align: center;
   margin: 0 auto;
-  padding: 93px 0 0 0;
+  padding: 89px 0 0 0;
   width: 260px;
   box-sizing: border-box;
 }

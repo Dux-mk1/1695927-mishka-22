@@ -3,6 +3,7 @@
   font-size: 15px;
   line-height: 24px;
   display: flex;
+  margin-bottom: 28px;
 }
 
 .features__table-head {
@@ -11,6 +12,14 @@
   font-weight: 400;
 }
 
+.features__row {
+  display: block;
+  margin-bottom: 11px;
+  transform: translateX(-2px);
+}
+
 .features__table-description {
   width: 162px;
+  padding: 0;
+  margin: 0;
 }
