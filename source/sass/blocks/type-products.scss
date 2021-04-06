@@ -7,7 +7,6 @@
 .type-products__wrapper {
   max-width: 767px;
   margin: 0 auto;
-  transform: translate(4px, -17px);
 }
 
 .type-products__list {
@@ -24,7 +23,7 @@
   display: flex;
   justify-content: center;
   color: $background-color;
-  padding: 24px 30px 31px 30px;
+  padding: 24px 30px 31px 39px;
   box-sizing: border-box;
 
   &--accent-color {
@@ -37,7 +36,9 @@
 
   span {
     display: block;
-    width: 202px;
+    width: 267px;
+    padding-right: 75px;
+    box-sizing: border-box;
     position: relative;
   }
 
@@ -52,7 +53,7 @@
     background-image: url("../img/index-mobile/type-products/interior.svg");
     width: 40px;
     height: 62px;
-    left: 214px;
+    right: 14px;
     top: -1px;
   }
 
@@ -60,7 +61,7 @@
     background-image: url("../img/index-mobile/type-products/toy.svg");
     width: 60px;
     height: 60px;
-    left: 204px;
+    right: 5px;
     top: -3px;
   }
 }

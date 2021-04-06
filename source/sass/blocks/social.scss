@@ -1,6 +1,8 @@
 .social {
   width: 142px;
   height: 38px;
+  padding: 0;
+  margin-left: 29px;
 }
 
 .social__list {
@@ -10,6 +12,4 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
-  position: relative;
-  left: 29px;
 }

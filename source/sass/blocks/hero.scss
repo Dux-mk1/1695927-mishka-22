@@ -1,18 +1,17 @@
 .hero {
   display: flex;
   justify-content: center;
-  background-position: 50% 0;
+  background-position: 50% -17px;
   background-color: $special-background-color;
   background-repeat: no-repeat;
   background-image: url("../img/index-mobile/hero-mobile@2x1.jpg");
-  height: 300px;
-  transform: translateY(-17px);
 }
 
 .hero__wrapper {
   text-align: center;
   margin: 0 auto;
-  padding: 89px 0 0 0;
+  padding: 73px 0 0 0;
+  min-height: 283px;
   width: 260px;
   box-sizing: border-box;
 }
