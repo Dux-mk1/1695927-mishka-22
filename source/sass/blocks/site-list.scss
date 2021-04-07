@@ -1,0 +1,36 @@
+.site-list {
+  margin: 0;
+  padding: 0 0 0 46px;
+}
+
+.site-list__item {
+  margin: 28px 0 27px 0;
+}
+
+.site-list__link {
+  color: $black;
+  position: relative;
+  text-align: left;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    display: block;
+    top: 3px;
+    left: -44px;
+  }
+
+  &--search::before {
+    background-image: url("../img/header/search.svg");
+    width: 18px;
+    height: 18px;
+  }
+
+  &--cart::before {
+    background-image: url("../img/header/cart.svg");
+    width: 21px;
+    height: 18px;
+  }
+}

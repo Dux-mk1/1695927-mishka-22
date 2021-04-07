@@ -1,0 +1,67 @@
+.type-products {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.type-products__wrapper {
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+.type-products__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.type-products__item {
+  align-items: center;
+}
+
+.type-products__link {
+  display: flex;
+  justify-content: center;
+  color: $background-color;
+  padding: 24px 30px 31px 39px;
+  box-sizing: border-box;
+
+  &--accent-color {
+    background-color: $accent-color;
+  }
+
+  &--dark-accent-color {
+    background-color: $dark-accent-color;
+  }
+
+  span {
+    display: block;
+    width: 267px;
+    padding-right: 75px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  span::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  &--accent-color span::after {
+    background-image: url("../img/index-mobile/type-products/interior.svg");
+    width: 40px;
+    height: 62px;
+    right: 14px;
+    top: -1px;
+  }
+
+  &--dark-accent-color span::after {
+    background-image: url("../img/index-mobile/type-products/toy.svg");
+    width: 60px;
+    height: 60px;
+    right: 5px;
+    top: -3px;
+  }
+}

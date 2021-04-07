@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  border: 2px solid $special-black;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: $special-black;
+  min-width: 192px;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-color;
+}

@@ -1,0 +1,32 @@
+.slider__controls {
+  border: 1px solid $lines-color;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 260px;
+  min-height: 50px;
+  box-sizing: border-box;
+}
+
+.slider__toggle {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  height: 50px;
+  flex: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--previous {
+    background-image: url("../img/index-mobile/huge-arrow-left.svg");
+    border-right: 1px solid $lines-color;
+  }
+
+  &--next {
+    background-image: url("../img/index-mobile/huge-arrow-right.svg");
+  }
+}

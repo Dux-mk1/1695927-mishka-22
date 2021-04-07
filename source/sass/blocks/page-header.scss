@@ -1,0 +1,30 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page-header__wrapper-top {
+  display: flex;
+  padding: 22px 16px 22px 116px;
+  box-sizing: border-box;
+  width: 320px;
+}
+
+.page-header__logo {
+  display: flex;
+  margin-right: 60px;
+}
+
+.page-header__toggle {
+  border: none;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/header/menu-close.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: 7px 7px;
+  margin: 0;
+  padding: 0;
+}
