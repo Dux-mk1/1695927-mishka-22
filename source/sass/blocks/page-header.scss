@@ -1,6 +1,5 @@
 .page-header {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -8,7 +7,6 @@
 
 .page-header__wrapper-top {
   display: flex;
-  flex-wrap: wrap;
   padding: 22px 23px 22px 58px;
   box-sizing: border-box;
   width: 320px;
@@ -16,7 +14,6 @@
 
 .page-header__logo {
   display: flex;
-  flex-wrap: wrap;
   margin: 0 auto;
 }
 

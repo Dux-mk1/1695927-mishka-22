@@ -1,6 +1,5 @@
 .order-fieldset__wrapper {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   position: relative;
 
@@ -237,7 +236,6 @@
 .order-fieldset__fio-item {
   margin-bottom: 22px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 
   &:last-child {
