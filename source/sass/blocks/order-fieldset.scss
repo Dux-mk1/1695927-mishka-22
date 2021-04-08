@@ -225,6 +225,17 @@
   }
 }
 
+.order-fieldset__radio:focus + .order-fieldset__radio-label--toy,
+.order-fieldset__radio:focus + .order-fieldset__radio-label--toy::before,
+.order-fieldset__radio:focus + .order-fieldset__radio-label--accessory,
+.order-fieldset__radio:focus + .order-fieldset__radio-label--accessory::before,
+.order-fieldset__radio:not(:checked):focus + .order-fieldset__radio-label--toy,
+.order-fieldset__radio:not(:checked):focus + .order-fieldset__radio-label--toy::before,
+.order-fieldset__radio:not(:checked):focus + .order-fieldset__radio-label--accessory,
+.order-fieldset__radio:not(:checked):focus + .order-fieldset__radio-label--accessory::before {
+  outline: $black solid 2px;
+}
+
 .order-fieldset__color-item {
   margin-bottom: 43px;
 }
