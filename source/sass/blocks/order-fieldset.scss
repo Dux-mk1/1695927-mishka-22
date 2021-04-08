@@ -1,0 +1,293 @@
+.order-fieldset__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+
+  &--type {
+    margin-bottom: 21px;
+  }
+
+  &--color {
+    margin-bottom: 3px;
+  }
+
+  &--phone::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    display: block;
+    background-image: url("../img/form-mobile/phone.svg");
+    width: 25px;
+    height: 24px;
+    top: 31px;
+    right: 8px;
+  }
+
+  &--email::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    display: block;
+    background-image: url("../img/form-mobile/mail.svg");
+    width: 32px;
+    height: 21px;
+    top: 36px;
+    right: 3px;
+  }
+}
+
+.order-fieldset__title {
+  color: $accent-color;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  margin: 0 0 35px 0;
+  padding: 0;
+  width: 260px;
+
+  &--margin-fio {
+    margin-bottom: 28px;
+  }
+
+  &--margin-phone,
+  &--margin-email {
+    margin-bottom: 4px;
+  }
+
+  &--margin-description {
+    margin-bottom: 23px;
+  }
+}
+
+.order-fieldset__type-list,
+.order-fieldset__color-list {
+  padding: 0 0 0 61px;
+}
+
+.order-fieldset__type-list,
+.order-fieldset__color-list,
+.order-fieldset__fio-list {
+  list-style: none;
+  margin: 0;
+  box-sizing: border-box;
+  width: 260px;
+}
+
+.order-fieldset__type-item,
+.order-fieldset__color-item,
+.order-fieldset__name-label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  width: 200px;
+  padding: 0;
+}
+
+.order-fieldset__type-item {
+  margin-bottom: 24px;
+}
+
+.order-fieldset__radio + .order-fieldset__radio-label {
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    background-image: url("../img/form-mobile/radio.svg");
+    left: -61px;
+  }
+
+  &--toy::before {
+    top: -17px;
+  }
+
+  &--accessory::before {
+    top: -10px;
+  }
+}
+
+.order-fieldset__radio:checked + .order-fieldset__radio-label {
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    background-image: url("../img/form-mobile/radio-active.svg");
+    left: -61px;
+  }
+
+  &--toy::before {
+    top: -17px;
+  }
+
+  &--accessory::before {
+    top: -10px;
+  }
+}
+
+.order-fieldset__radio:not(:disabled):not(:checked) + .order-fieldset__radio-label {
+  display: block;
+  position: relative;
+
+  &:hover::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    background-image: url("../img/form-mobile/radio-hover.svg");
+    left: -61px;
+  }
+
+  &--toy:hover::before {
+    top: -17px;
+  }
+
+  &--accessory:hover::before {
+    top: -10px;
+  }
+}
+
+.order-fieldset__radio:not(:disabled):checked + .order-fieldset__radio-label {
+  display: block;
+  position: relative;
+
+  &:hover::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    background-image: url("../img/form-mobile/radio-active-hover.svg");
+    left: -61px;
+  }
+
+  &--toy:hover::before {
+    top: -17px;
+  }
+
+  &--accessory:hover::before {
+    top: -10px;
+  }
+}
+
+.order-fieldset__radio:not(:disabled):not(:checked) + .order-fieldset__radio-label:active {
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    background-image: url("../img/form-mobile/radio-down.svg");
+    left: -61px;
+  }
+
+  &--toy::before {
+    top: -17px;
+  }
+
+  &--accessory::before {
+    top: -10px;
+  }
+}
+
+.order-fieldset__radio:not(:disabled):checked + .order-fieldset__radio-label:active {
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    background-image: url("../img/form-mobile/radio-active-down.svg");
+    left: -61px;
+  }
+
+  &--toy::before {
+    top: -17px;
+  }
+
+  &--accessory::before {
+    top: -10px;
+  }
+}
+
+.order-fieldset__color-item {
+  margin-bottom: 43px;
+}
+
+.order-fieldset__fio-list {
+  padding: 0;
+}
+
+.order-fieldset__fio-item {
+  margin-bottom: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  &:last-child {
+    margin-bottom: 35px;
+  }
+}
+
+.order-fieldset__name {
+  padding: 17px 0 17px 0;
+}
+
+.order-fieldset__name,
+.order-fieldset__phone,
+.order-fieldset__email {
+  border: none;
+  border-bottom: 2px solid $black;
+  outline: none;
+  width: 260px;
+  height: 52px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.order-fieldset__name,
+.order-fieldset__phone,
+.order-fieldset__email,
+.order-fieldset__additional {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order-fieldset__phone {
+  padding: 14px 0 20px 0;
+  margin-bottom: 35px;
+}
+
+.order-fieldset__email {
+  padding: 16px 0 18px 0;
+  margin-bottom: 35px;
+}
+
+.order-fieldset__additional {
+  border: 2px solid $black;
+  width: 260px;
+  height: 142px;
+  box-sizing: border-box;
+  padding: 17px;
+  resize: none;
+  margin-bottom: 17px;
+}
