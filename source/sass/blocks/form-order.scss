@@ -1,6 +1,6 @@
 .form-order {
   margin: 0 auto;
-  max-width: 767px;
+  width: 260px;
 }
 
 .form-order__description {
@@ -16,4 +16,15 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
+}
+
+.form-order__submit-button {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  width: 260px;
+
+  &:focus {
+    outline: $dark-accent-color solid 2px;
+  }
 }
