@@ -23,6 +23,8 @@
   font-size: 17px;
   line-height: 16px;
   width: 260px;
+  padding: 12px 2px 6px 3px;
+  box-sizing: border-box;
 
   &:focus {
     outline: $dark-accent-color solid 2px;
