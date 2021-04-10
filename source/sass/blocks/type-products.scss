@@ -15,13 +15,9 @@
   padding: 0;
 }
 
-.type-products__item {
-  align-items: center;
-}
-
 .type-products__link {
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin: 0 auto;
   color: $background-color;
   padding: 24px 30px 31px 39px;
   box-sizing: border-box;
@@ -40,6 +36,7 @@
     padding-right: 75px;
     box-sizing: border-box;
     position: relative;
+    margin: 0 auto;
   }
 
   span::after {

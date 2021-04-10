@@ -1,0 +1,32 @@
+.form-order {
+  margin: 0 auto;
+  width: 260px;
+}
+
+.form-order__description {
+  width: 260px;
+  line-height: 16px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.form-order__button-wrapper {
+  width: 260px;
+  margin-bottom: 55px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.form-order__submit-button {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  width: 260px;
+  padding: 12px 2px 6px 3px;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: $dark-accent-color solid 2px;
+  }
+}
