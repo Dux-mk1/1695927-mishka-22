@@ -25,24 +25,19 @@
   }
 }
 
-.manufacturing__start-video {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    background-repeat: no-repeat;
-    background-image: url("../img/catalog-mobile/play.svg");
-    width: 100px;
-    height: 77px;
-    bottom: 42px;
-    right: 80px;
-  }
-}
-
 .manufacturing__video-wrapper {
   height: 150px;
+  background-image: url("../img/catalog-mobile/video-mobile.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manufacturing__start-video {
+  display: flex;
+  background-image: url("../img/catalog-mobile/play.svg");
+  width: 100px;
+  height: 77px;
 }
 
 .manufacturing__footer-wrapper {

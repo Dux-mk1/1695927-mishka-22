@@ -1,6 +1,6 @@
 .products__wrapper {
   margin: 0 auto;
-  padding-top: 3px;
+  padding-top: 14px;
   width: 260px;
 }
 
@@ -12,9 +12,5 @@
 
 .products__item {
   padding: 0;
-  margin-bottom: 19px;
-
-  &:last-child {
-    margin-bottom: 30px;
-  }
+  margin: 0;
 }
