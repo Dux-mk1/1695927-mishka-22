@@ -27,15 +27,15 @@
 
 .manufacturing__video-wrapper {
   height: 150px;
-  background-image: url("../img/catalog-mobile/video-mobile.jpg");
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 
 .manufacturing__start-video {
-  display: flex;
   background-image: url("../img/catalog-mobile/play.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100px;
   height: 77px;
 }
