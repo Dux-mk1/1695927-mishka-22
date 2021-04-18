@@ -1,10 +1,6 @@
 .hero {
-  display: flex;
-  justify-content: center;
-  background-position: 50% -17px;
   background-color: $special-background-color;
-  background-repeat: no-repeat;
-  background-image: url("../img/index-mobile/hero-mobile@2x1.jpg");
+  position: relative;
 }
 
 .hero__wrapper {
@@ -17,10 +13,23 @@
 }
 
 .hero__title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateY(-27%);
+  min-width: 312px;
   margin: 0;
   padding: 0;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+  z-index: 1;
+}
+
+.hero__image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateY(7%);
 }

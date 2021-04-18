@@ -6,6 +6,10 @@
   margin-bottom: 24px;
   border-collapse: collapse;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
 }
 
 .features__table-head {
