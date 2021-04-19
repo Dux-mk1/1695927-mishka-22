@@ -5,6 +5,10 @@
   background-color: $special-background-color;
   background-repeat: no-repeat;
   background-image: url("../img/index-mobile/hero-mobile@2x1.jpg");
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $lines-color;
+  }
 }
 
 .hero__wrapper {

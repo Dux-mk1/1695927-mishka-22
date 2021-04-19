@@ -19,21 +19,19 @@
       font-weight: 700;
       font-size: 17px;
       line-height: 24px;
-      height: 89px;
+      height: auto;
     }
   }
 
   &--secondary {
     @media (min-width: $tablet-width) {
       order: 1;
-      border-bottom: 1px solid $lines-color;
       width: 398px;
       background-color: $background-color;
     }
 
     @media (min-width: $desktop-width) {
       order: 3;
-      border-bottom: none;
     }
   }
 

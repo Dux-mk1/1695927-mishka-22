@@ -27,17 +27,14 @@
 
   @media (min-width: $tablet-width) {
     width: 370px;
-    border: 1px solid $lines-color;
-    border-top: none;
-    border-left: none;
+    border-right: 1px solid $lines-color;
     padding: 28px 23px 25px 58px;
-    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
     order: 2;
     width: 295px;
-    height: 89px;
+    min-height: 89px;
     margin: 0;
     padding: 0 0 0 0;
   }
@@ -75,7 +72,7 @@
   margin: 0;
   padding: 0 0 0 26px;
   width: 259px;
-  min-height: 24px;
+  height: 0;
   box-sizing: border-box;
 
   @media (max-width: $mobile-width-only) {

@@ -18,6 +18,7 @@
   @media (min-width: $desktop-width) {
     width: 1050px;
     min-height: 636px;
+    display: block;
   }
 }
 
@@ -72,6 +73,7 @@
 .featured-product__container-image {
   width: 260px;
   height: 315px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -91,7 +93,7 @@
 }
 
 .featured-product__image {
-  margin-bottom: 16px;
+  margin: 0;
   padding: 0;
   border: none;
 }
