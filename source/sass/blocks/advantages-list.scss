@@ -4,8 +4,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    column-count: 2;
   }
 }
 
@@ -17,28 +16,6 @@
   margin-bottom: 30px;
   position: relative;
   max-width: 250px;
-
-  @media (min-width: $tablet-width) {
-    &--handmate {
-      order: 2;
-    }
-
-    &--price {
-      order: 3;
-    }
-
-    &--support {
-      order: 4;
-    }
-
-    &--like {
-      order: 5;
-    }
-
-    &--packaging {
-      order: 6;
-    }
-  }
 
   &::before {
     content: "";

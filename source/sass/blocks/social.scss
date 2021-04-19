@@ -9,7 +9,29 @@
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: 0 auto;
   padding: 0;
+}
+
+.social__item {
+  margin-right: 26px;
+}
+
+.social__link {
+  width: 30px;
+  height: 30px;
+  display: block;
+  box-sizing: border-box;
+
+  &--inst {
+    padding: 3px 0 0 0;
+  }
+
+  &--facebook {
+    padding: 0 0 0 7px;
+  }
+
+  &--twitter {
+    padding: 4px 0 0 7px;
+  }
 }

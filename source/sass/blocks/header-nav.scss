@@ -2,56 +2,51 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  width: 260px;
 
-  @media (max-width: $mobile-width-only) {
-    &--tertiary {
-      display: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    &--primary {
+  &--primary {
+    @media (min-width: $tablet-width) {
       order: 2;
       width: 355px;
       font-weight: 700;
       font-size: 15px;
       line-height: 24px;
-      z-index: 1;
       height: 0;
     }
 
-    &--secondary {
-      order: 1;
-      border-bottom: 1px solid $lines-color;
-      width: 398px;
-      z-index: 1;
-      background-color: $background-color;
-    }
-
-    &--tertiary {
-      display: none;
-      z-index: 1;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--primary {
+    @media (min-width: $desktop-width) {
       order: 1;
       width: 455px;
       font-weight: 700;
       font-size: 17px;
       line-height: 24px;
-      margin-bottom: 20px;
       height: 89px;
     }
+  }
 
-    &--secondary {
+  &--secondary {
+    @media (min-width: $tablet-width) {
+      order: 1;
+      border-bottom: 1px solid $lines-color;
+      width: 398px;
+      background-color: $background-color;
+    }
+
+    @media (min-width: $desktop-width) {
       order: 3;
       border-bottom: none;
     }
+  }
 
-    &--tertiary {
+  &--tertiary {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
       display: block;
       order: 4;
       width: 316px;
@@ -59,6 +54,7 @@
       font-weight: 700;
       font-size: 15px;
       line-height: 24px;
+      height: 0;
     }
   }
 }
@@ -66,7 +62,6 @@
 .header-nav__list {
   list-style: none;
   display: flex;
-  align-items: flex-start;
   align-content: center;
   flex-direction: column;
 }

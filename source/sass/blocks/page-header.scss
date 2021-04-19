@@ -1,14 +1,8 @@
-.page-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .page-header__wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -25,6 +19,7 @@
 
 .page-header__wrapper-top {
   display: flex;
+  margin: 0 auto;
   padding: 22px 23px 22px 58px;
   box-sizing: border-box;
   width: 320px;
@@ -78,7 +73,10 @@
   font-size: 15px;
   line-height: 24px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 26px;
+  width: 259px;
+  min-height: 24px;
+  box-sizing: border-box;
 
   @media (max-width: $mobile-width-only) {
     display: none;
@@ -93,5 +91,6 @@
 
   @media (min-width: $desktop-width) {
     order: 6;
+    height: 0;
   }
 }

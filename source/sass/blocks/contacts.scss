@@ -4,9 +4,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
     position: relative;
   }
 }
@@ -23,6 +20,7 @@
 
   @media (min-width: $desktop-width) {
     width: 500px;
+    padding: 0;
   }
 }
 
@@ -58,8 +56,12 @@
 
 .contacts__content-wrapper {
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -109,8 +111,10 @@
   @media (min-width: $desktop-width) {
     width: 230px;
     position: absolute;
-    bottom: -8%;
-    left: 20%;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
