@@ -2,25 +2,45 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
+  z-index: 1;
 }
 
 .type-products__wrapper {
   max-width: 767px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    max-width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    max-width: 1050px;
+  }
 }
 
 .type-products__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .type-products__link {
   display: block;
   margin: 0 auto;
   color: $background-color;
-  padding: 24px 30px 31px 39px;
+  padding: 24px 30px 31px 31px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-height: 119px;
+  }
 
   &--accent-color {
     background-color: $accent-color;
@@ -32,7 +52,7 @@
 
   span {
     display: block;
-    width: 267px;
+    width: 260px;
     padding-right: 75px;
     box-sizing: border-box;
     position: relative;
@@ -50,7 +70,7 @@
     background-image: url("../img/index-mobile/type-products/interior.svg");
     width: 40px;
     height: 62px;
-    right: 14px;
+    right: 7px;
     top: -1px;
   }
 
@@ -58,7 +78,7 @@
     background-image: url("../img/index-mobile/type-products/toy.svg");
     width: 60px;
     height: 60px;
-    right: 5px;
+    right: -2px;
     top: -3px;
   }
 }

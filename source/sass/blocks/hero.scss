@@ -5,6 +5,10 @@
   background-color: $special-background-color;
   background-repeat: no-repeat;
   background-image: url("../img/index-mobile/hero-mobile@2x1.jpg");
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $lines-color;
+  }
 }
 
 .hero__wrapper {
@@ -14,6 +18,14 @@
   min-height: 283px;
   width: 260px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 
 .hero__title {
@@ -23,4 +35,11 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+}
+
+.hero__image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateY(7%);
 }

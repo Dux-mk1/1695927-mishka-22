@@ -2,6 +2,14 @@
   background-color: $secondary-background-color;
   max-width: 767px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 1149px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 999999px;
+  }
 }
 
 .page-footer__wrapper {
@@ -9,6 +17,23 @@
   width: 260px;
   box-sizing: border-box;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 0 58px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+
+.page-footer__link {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 .page-footer__social {

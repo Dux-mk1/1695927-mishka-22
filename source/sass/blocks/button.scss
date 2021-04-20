@@ -13,4 +13,8 @@
   justify-content: center;
   background-color: $background-color;
   padding: 14px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 175px;
+  }
 }

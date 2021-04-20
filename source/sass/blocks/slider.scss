@@ -7,6 +7,10 @@
   width: 260px;
   min-height: 50px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .slider__toggle {
@@ -24,6 +28,10 @@
   &--previous {
     background-image: url("../img/index-mobile/huge-arrow-left.svg");
     border-right: 1px solid $lines-color;
+
+    @media (min-width: $tablet-width) {
+      border-right: none;
+    }
   }
 
   &--next {
