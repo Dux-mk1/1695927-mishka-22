@@ -3,8 +3,15 @@
   flex-direction: column;
   position: relative;
 
-  &--type {
-    margin-bottom: 21px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
   }
 
   &--color {
@@ -16,6 +23,22 @@
   &--phone,
   &--email {
     margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--email {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &--additional {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 53px;
+    }
   }
 
   &::after {
@@ -31,6 +54,10 @@
     height: 24px;
     bottom: 16px;
     right: 8px;
+
+    @media (min-width: $desktop-width) {
+      right: 190px;
+    }
   }
 
   &--email::after {
@@ -39,6 +66,10 @@
     height: 21px;
     bottom: 14px;
     right: 3px;
+
+    @media (min-width: $desktop-width) {
+      right: 185px;
+    }
   }
 }
 
@@ -49,6 +80,16 @@
   line-height: 16px;
   margin: 0 0 24px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 0 0 0;
+    margin: 0 32px 0 0;
+    width: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 
   &--margin-fio {
     margin-bottom: 30px;
@@ -72,6 +113,29 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 501px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 873px;
+  }
+
+  &--type {
+    margin-bottom: 20px;
+  }
+
+  &--color {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
 }
 
 .order-fieldset__item {
@@ -89,6 +153,15 @@
     margin-bottom: 24px;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 700px;
+    }
   }
 
   &--fio:last-child {
@@ -106,6 +179,12 @@
 
   &--name {
     margin-bottom: 8px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 7px;
+      margin-right: 25px;
+      width: auto;
+    }
   }
 }
 
@@ -224,6 +303,28 @@
   height: 42px;
   box-sizing: border-box;
   padding: 5px 37px 12px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 37px 12px 17px;
+  }
+
+  &--name {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+
+  &--phone,
+  &--email {
+    @media (min-width: $tablet-width) {
+      background-color: $secondary-background-color;
+      width: 501px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 700px;
+    }
+  }
 }
 
 .order-fieldset__additional {
@@ -233,4 +334,12 @@
   padding: 17px;
   resize: none;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 501px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
 }

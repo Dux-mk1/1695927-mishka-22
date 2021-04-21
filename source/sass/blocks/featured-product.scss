@@ -13,12 +13,14 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 404px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
     min-height: 636px;
     display: block;
+    position: relative;
   }
 }
 
@@ -52,12 +54,10 @@
 .featured-product__container {
   @media (min-width: $tablet-width) {
     padding-right: 334px;
-    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 525px;
-    position: relative;
     order: 3;
   }
 }
@@ -85,7 +85,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 0;
+    top: 0;
     right: 0;
     width: 525px;
     height: 636px;
