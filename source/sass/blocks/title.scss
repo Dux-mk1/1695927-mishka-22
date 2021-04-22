@@ -2,6 +2,15 @@
   box-sizing: border-box;
   max-width: 767px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 1149px;
+    border-top: 1px solid $lines-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 999999px;
+  }
 }
 
 .title__content {
@@ -12,6 +21,18 @@
   font-size: 27px;
   line-height: 30px;
   margin: 0 0 17px 0;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: bold;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .title__text {
@@ -20,4 +41,15 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 702px;
+    margin: 0 auto;
+  }
 }

@@ -1,6 +1,35 @@
 .form-order {
   margin: 0 auto;
   width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.form-order__fieldset {
+  &--color,
+  &--phone,
+  &--email {
+    @media (min-width: $tablet-width) {
+      background-color: $secondary-background-color;
+    }
+  }
+}
+
+.form-order__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
 }
 
 .form-order__description {
@@ -8,6 +37,10 @@
   line-height: 16px;
   margin-bottom: 30px;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .form-order__button-wrapper {
