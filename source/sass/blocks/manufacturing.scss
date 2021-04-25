@@ -1,6 +1,10 @@
+.manufacturing {
+  margin-bottom: 57px;
+}
+
 .manufacturing__wrapper {
   width: 260px;
-  margin: 0 auto 57px auto;
+  margin: 0 auto 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 668px;
@@ -36,7 +40,7 @@
 
   @media (min-width: $desktop-width) {
     width: 367px;
-    padding: 96px 0 0 40px;
+    padding: 96px 41px 0 40px;
   }
 
   &::before {

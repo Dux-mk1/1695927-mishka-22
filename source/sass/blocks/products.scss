@@ -18,9 +18,9 @@
   padding: 0;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 51px;
   }
 }
 
@@ -28,13 +28,7 @@
   padding: 0;
   margin: 0 0 30px 0;
 
-  @media (min-width: $desktop-width) {
-    margin-right: 51px;
-  }
-
-  &:nth-child(3n) {
-    @media (min-width: $desktop-width) {
-      margin-right: 0;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
