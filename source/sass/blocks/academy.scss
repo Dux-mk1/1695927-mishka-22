@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: center;
   align-content: center;
+
+  &:active .academy__icon {
+    opacity: 0.3;
+  }
 }
 
 .academy__text {

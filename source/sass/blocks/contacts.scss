@@ -131,4 +131,12 @@
 .contacts__link {
   color: $special-black;
   border-bottom: 1px solid $light-accent-color;
+
+  &:hover {
+    color: $super-accent-color;
+  }
+
+  &:active {
+    border-bottom: 1px solid $rare-accent-color;
+  }
 }

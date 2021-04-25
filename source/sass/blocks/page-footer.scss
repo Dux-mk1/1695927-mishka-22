@@ -31,6 +31,14 @@
 }
 
 .page-footer__link {
+  &:hover .page-footer__logo-path {
+    fill: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (max-width: $mobile-width-only) {
     display: none;
   }

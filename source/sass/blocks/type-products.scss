@@ -38,6 +38,16 @@
   padding: 24px 30px 31px 31px;
   box-sizing: border-box;
 
+  &:hover {
+    padding: 19px 30px 31px 31px;
+    transform: scaleY(1.04);
+  }
+
+  &:active {
+    padding: 24px 30px 31px 31px;
+    transform: scaleY(1);
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 119px;
   }
