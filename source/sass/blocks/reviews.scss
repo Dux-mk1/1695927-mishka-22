@@ -1,3 +1,35 @@
+.reviews {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 157px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 336px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      background-repeat: repeat-x;
+      width: 1149px;
+      height: 17px;
+      background-image: url("../img/zigzag-line-desktop.svg");
+      left: 3px;
+      bottom: -131px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1050px;
+      height: 23px;
+      background-image: url("../img/zigzag-line-desktop-real-desktop.svg");
+      left: 144px;
+      bottom: -186px;
+    }
+  }
+}
+
 .reviews__wrapper {
   padding: 0 0 45px 0;
   width: 260px;
@@ -9,10 +41,32 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 76px 0 0 0;
+    position: relative;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 350px;
+      height: 457px;
+      background-image: url("../img/index-mobile/review.jpg");
+      background-repeat: no-repeat;
+      left: -48px;
+      top: -3px;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+      top: 32px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
+    padding: 111px 0 0 175px;
   }
 }
 
@@ -25,6 +79,18 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0 0 39px 0;
+    box-sizing: border-box;
+    padding: 4px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 0;
+    margin: 0 0 36px 0;
   }
 }
 
@@ -46,8 +112,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 3px;
+    right: -1px;
     margin: 0;
   }
 }
@@ -56,5 +122,12 @@
   @media (min-width: $tablet-width) {
     order: 2;
     margin-left: auto;
+  }
+}
+
+.reviews__button-text {
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 20px;
   }
 }

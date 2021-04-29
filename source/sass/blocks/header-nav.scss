@@ -11,6 +11,9 @@
       font-size: 15px;
       line-height: 24px;
       height: 0;
+      position: absolute;
+      left: 0;
+      bottom: -22px;
     }
 
     @media (min-width: $desktop-width) {
@@ -20,6 +23,7 @@
       font-size: 17px;
       line-height: 24px;
       height: auto;
+      position: relative;
     }
   }
 

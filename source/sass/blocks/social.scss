@@ -35,7 +35,11 @@
   align-items: center;
   box-sizing: border-box;
 
-  &:hover .social__path-icon {
+  svg {
+    fill: $social-icon;
+  }
+
+  &:hover svg {
     fill: $accent-color;
   }
 

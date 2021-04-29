@@ -30,12 +30,21 @@
       padding: 0;
     }
   }
+
+  &--tertiary {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      left: 50px;
+      bottom: -44px;
+    }
+  }
 }
 
 .site-list__item {
   @media (max-width: $mobile-width-only) {
     border-top: 1px solid $lines-color;
     display: inline-block;
+    box-sizing: border-box;
   }
 
   @media (min-width: $tablet-width) {
@@ -48,11 +57,11 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding: 33px 50px 31px 53px;
+      padding: 33px 50px 31px 3px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 33px 52px 31px 82px;
+      padding: 33px 52px 31px 32px;
     }
   }
 
@@ -74,7 +83,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 33px 35px 31px 50px;
+      padding: 11px 35px 31px 50px;
       box-sizing: border-box;
       border-right: 1px solid $lines-color;
       margin-right: 0;
@@ -83,7 +92,7 @@
 
   &--crochet {
     @media (min-width: $desktop-width) {
-      padding: 34px 30px 30px 35px;
+      padding: 12px 30px 30px 35px;
     }
   }
 
@@ -100,7 +109,7 @@
   text-align: left;
 
   &:hover {
-    opacity: 0.6;
+    color: $black-hover;
   }
 
   &:active,
@@ -117,7 +126,26 @@
     box-sizing: border-box;
   }
 
+  svg {
+    position: absolute;
+    left: 32px;
+    top: 31px;
+    fill: $black;
+    opacity: 0.2;
+  }
+
   &--search {
+    svg {
+      @media (min-width: $tablet-width) {
+        left: 33px;
+        top: 35px;
+      }
+
+      @media (min-width: $desktop-width) {
+        left: 30px;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       margin: 0;
       width: 81px;
@@ -136,38 +164,26 @@
     }
   }
 
-  &--search:hover .site-list__search-path {
+  &--search:hover svg {
     fill: $accent-color;
     opacity: 1;
   }
 
-  &--cart:hover .site-list__cart-path {
+  &--cart {
+    svg {
+      @media (min-width: $tablet-width) {
+        left: -1px;
+        top: 2px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 50px;
+    }
+  }
+
+  &--cart:hover svg {
     fill: $accent-color;
     opacity: 1;
-  }
-}
-
-.site-list__search-icon,
-.site-list__cart-icon {
-  position: absolute;
-  left: 32px;
-  top: 31px;
-}
-
-.site-list__search-icon {
-  @media (min-width: $tablet-width) {
-    left: 33px;
-    top: 35px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 30px;
-  }
-}
-
-.site-list__cart-icon {
-  @media (min-width: $tablet-width) {
-    left: -52px;
-    top: 2px;
   }
 }

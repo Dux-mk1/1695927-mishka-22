@@ -31,7 +31,11 @@
 }
 
 .page-footer__link {
-  &:hover .page-footer__logo-path {
+  svg {
+    fill: $black;
+  }
+
+  &:hover svg {
     fill: $accent-color;
   }
 
