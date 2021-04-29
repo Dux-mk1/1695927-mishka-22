@@ -7,27 +7,6 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 336px;
   }
-
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      background-repeat: repeat-x;
-      width: 1149px;
-      height: 17px;
-      background-image: url("../img/zigzag-line-desktop.svg");
-      left: 3px;
-      bottom: -131px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 1050px;
-      height: 23px;
-      background-image: url("../img/zigzag-line-desktop-real-desktop.svg");
-      left: 144px;
-      bottom: -186px;
-    }
-  }
 }
 
 .reviews__wrapper {
@@ -45,7 +24,7 @@
     position: relative;
   }
 
-  &::after {
+  &::before {
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;

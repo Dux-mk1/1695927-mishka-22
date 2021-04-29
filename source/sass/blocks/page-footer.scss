@@ -31,6 +31,8 @@
 }
 
 .page-footer__link {
+  display: none;
+
   svg {
     fill: $black;
   }
@@ -43,8 +45,8 @@
     opacity: 0.3;
   }
 
-  @media (max-width: $mobile-width-only) {
-    display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 

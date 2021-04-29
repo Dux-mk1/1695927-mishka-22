@@ -3,24 +3,27 @@
   font-size: 19px;
   line-height: 24px;
   z-index: 1;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;
-    position: relative;
   }
 
   &::after {
-    content: "";
-    position: absolute;
-    background-repeat: repeat-x;
-    background-image: url("../img/zigzag-fill-desktop.svg");
-    width: 999999px;
-    height: 24px;
-    left: 3px;
-    bottom: -14px;
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      background-repeat: repeat-x;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      width: 95vw;
+      height: 24px;
+      left: 0;
+      bottom: -14px;
+    }
 
     @media (min-width: $desktop-width) {
-      left: 81px;
+      width: 98vw;
+      left: 0;
       bottom: -18px;
       height: 34px;
       background-image: url("../img/zigzag-fill-desktop-real-desktop.svg");
@@ -31,6 +34,7 @@
 .type-products__wrapper {
   max-width: 767px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 668px;
