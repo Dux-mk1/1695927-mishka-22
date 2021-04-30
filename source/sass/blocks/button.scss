@@ -14,7 +14,22 @@
   background-color: $background-color;
   padding: 14px;
 
+  &:hover {
+    color: $background-color;
+    background-color: $special-black;
+  }
+
+  &:active .button__text {
+    opacity: 0.3;
+    background-color: $special-black;
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 175px;
+  }
+
+  &--special-padding {
+    padding: 13px 10px 15px 10px;
+    height: min-content;
   }
 }

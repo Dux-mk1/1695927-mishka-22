@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    width: 176px;
   }
 }
 
@@ -24,6 +25,14 @@
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--previous {
     background-image: url("../img/index-mobile/huge-arrow-left.svg");
