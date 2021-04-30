@@ -40,37 +40,6 @@
       margin-bottom: 53px;
     }
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    display: block;
-  }
-
-  &--phone::after {
-    background-image: url("../img/form-mobile/phone.svg");
-    width: 25px;
-    height: 24px;
-    bottom: 16px;
-    right: 8px;
-
-    @media (min-width: $desktop-width) {
-      right: 190px;
-    }
-  }
-
-  &--email::after {
-    background-image: url("../img/form-mobile/mail.svg");
-    width: 32px;
-    height: 21px;
-    bottom: 14px;
-    right: 3px;
-
-    @media (min-width: $desktop-width) {
-      right: 185px;
-    }
-  }
 }
 
 .order-fieldset__title {
@@ -304,6 +273,11 @@
   box-sizing: border-box;
   padding: 5px 37px 12px 0;
 
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $light-accent-color;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 5px 37px 12px 17px;
   }
@@ -327,6 +301,30 @@
   }
 }
 
+.order-fieldset__icon {
+  fill: $black;
+  opacity: 0.2;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  @media (min-width: $tablet-width) {
+    right: 0;
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+    top: 0;
+  }
+}
+
+.order-fieldset__input-element:hover + .order-fieldset__icon,
+.order-fieldset__input-element:focus + .order-fieldset__icon {
+  opacity: 1;
+  fill: $light-accent-color;
+}
+
 .order-fieldset__additional {
   border: 2px solid $black;
   height: 142px;
@@ -334,6 +332,12 @@
   padding: 17px;
   resize: none;
   margin-bottom: 17px;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $light-accent-color;
+    outline: $light-accent-color 2px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 501px;

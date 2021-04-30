@@ -7,7 +7,7 @@
     position: absolute;
     background-repeat: repeat-x;
     background-image: url("../img/zigzag-line-mobile.svg");
-    width: 95vw;
+    width: 100vw;
     height: 6px;
     left: 0;
     top: -1px;
@@ -18,7 +18,7 @@
       height: 17px;
       top: -42px;
       background-position: 0;
-      width: 97vw;
+      width: 100vw;
     }
 
     @media (min-width: $desktop-width) {

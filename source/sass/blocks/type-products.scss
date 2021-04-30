@@ -15,14 +15,14 @@
       position: absolute;
       background-repeat: repeat-x;
       background-image: url("../img/zigzag-fill-desktop.svg");
-      width: 95vw;
+      width: 100vw;
       height: 24px;
       left: 0;
       bottom: -14px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 98vw;
+      width: 100vw;
       left: 0;
       bottom: -18px;
       height: 34px;
