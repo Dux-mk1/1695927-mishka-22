@@ -124,11 +124,13 @@
   width: max-content;
   position: relative;
   z-index: 1;
+  background-color: $background-color;
 
   @media (min-width: $tablet-width) {
     padding: 13px 0 0 0;
     margin: 0;
     width: 168px;
+    background-color: inherit;
   }
 
   @media (min-width: $desktop-width) {
@@ -197,7 +199,7 @@
     margin-bottom: 21px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 36px;
+      margin-bottom: 35px;
       margin-right: 5px;
     }
   }
@@ -389,7 +391,13 @@
       height: 52px;
       left: -2px;
       top: 50%;
-      transform: translateY(-46%);
+      transform: translateY(-47%);
+
+      @media (min-width: $desktop-width) {
+        left: -1px;
+        top: 50%;
+        transform: translateY(-49%);
+      }
     }
   }
 }
@@ -550,6 +558,7 @@
 
   @media (min-width: $tablet-width) {
     width: 501px;
+    padding: 14px;
   }
 
   @media (min-width: $desktop-width) {
