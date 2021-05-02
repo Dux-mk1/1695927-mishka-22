@@ -1,5 +1,13 @@
 .manufacturing {
   margin-bottom: 57px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 105px;
+  }
 }
 
 .manufacturing__wrapper {
@@ -20,6 +28,14 @@
     box-sizing: border-box;
     padding: 0 0 0 683px;
   }
+
+  &:hover {
+    box-shadow: 0 6px 10px $shadow;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px $shadow;
+  }
 }
 
 .manufacturing__title {
@@ -36,11 +52,14 @@
     order: 2;
     width: 100%;
     border-bottom: none;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 40px 46px 0 106px;
   }
 
   @media (min-width: $desktop-width) {
     width: 367px;
-    padding: 96px 41px 0 40px;
+    padding: 96px 56px 0 78px;
   }
 
   &::before {
@@ -53,6 +72,16 @@
     height: 22px;
     top: 34px;
     left: 33px;
+
+    @media (min-width: $tablet-width) {
+      top: 38px;
+      left: 41px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 46px;
+      left: 78px;
+    }
   }
 }
 
@@ -82,6 +111,19 @@
   transform: translate(-50%, -50%);
   width: 100px;
   height: 77px;
+
+  &:hover {
+    width: 121px;
+    height: 92px;
+    background-size: 121px 92px;
+  }
+
+  &:active {
+    width: 81px;
+    height: 62px;
+    background-size: 81px 62px;
+    opacity: 0.3;
+  }
 }
 
 .manufacturing__footer-wrapper {
@@ -95,15 +137,32 @@
 
   @media (min-width: $tablet-width) {
     order: 3;
-    padding: 33px 41px 32px 40px;
+    padding: 25px 41px 47px 41px;
   }
 
   @media (min-width: $desktop-width) {
     width: 367px;
+    padding: 28px 56px 60px 78px;
   }
 }
 
 .manufacturing__description {
   margin: 0 0 41px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 53px 0;
+  }
+}
+
+.manufacturing__button {
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 16px;
+  }
 }
