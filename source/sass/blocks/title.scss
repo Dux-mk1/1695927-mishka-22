@@ -1,7 +1,28 @@
 .title__wrapper {
   box-sizing: border-box;
   max-width: 767px;
-  margin: 0 auto;
+  margin: 0 auto 29px auto;
+  position: relative;
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      background-repeat: repeat-x;
+      width: 100vw;
+      height: 24px;
+      left: 0;
+      bottom: 114px;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/zigzag-fill-desktop-real-desktop.svg");
+      height: 34px;
+      bottom: 158px;
+      background-size: auto 35px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     max-width: 1149px;
@@ -26,18 +47,22 @@
     font-weight: 700;
     font-size: 43px;
     line-height: 50px;
+    padding: 101px 30px 74px 30px;
+    margin: 0 0 67px 0;
   }
 
   @media (min-width: $desktop-width) {
     font-weight: bold;
     font-size: 53px;
     line-height: 57px;
+    padding: 101px 30px 112px 30px;
+    margin: 0 0 100px 0;
   }
 }
 
 .title__text {
   width: 260px;
-  margin: 0 auto 29px auto;
+  margin: 0 auto;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;

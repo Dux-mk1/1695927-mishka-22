@@ -11,14 +11,14 @@
     position: absolute;
     background-repeat: repeat-x;
     background-image: url("../img/zigzag-line-mobile.svg");
-    width: 95vw;
+    width: 100vw;
     height: 6px;
     left: 0;
     bottom: -7px;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/zigzag-line-desktop.svg");
-      width: 97vw;
+      width: 100vw;
       height: 17px;
       left: 0;
       bottom: -33px;
