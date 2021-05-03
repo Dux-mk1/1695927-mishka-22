@@ -9,6 +9,14 @@
     display: block;
     min-height: auto;
   }
+
+  &:hover {
+    box-shadow: 0 6px 10px $shadow;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px $shadow;
+  }
 }
 
 .product__info {
@@ -16,17 +24,20 @@
   padding: 25px 28px 0 28px;
   box-sizing: border-box;
   border: 1px solid $lines-color;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     flex-wrap: wrap;
     width: 335px;
+    padding: 26px 28px 0 34px;
   }
 
   @media (min-width: $desktop-width) {
     width: 316px;
+    padding: 26px 28px 0 27px;
+    min-height: 197px;
   }
 }
 
@@ -39,6 +50,22 @@
 
   &--title {
     margin-bottom: 7px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 9px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 5px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -50,8 +77,13 @@
   }
 
   &--image {
+    @media (min-width: $tablet-width) {
+      width: 334px;
+    }
+
     @media (min-width: $desktop-width) {
       width: 316px;
+      min-height: 462px;
     }
   }
 }
@@ -67,6 +99,11 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .product__specifications {
@@ -75,6 +112,11 @@
   line-height: 30px;
   margin: 0 0 18px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 .product__footer {
@@ -91,6 +133,12 @@
 
   @media (min-width: $tablet-width) {
     width: 268px;
+    position: absolute;
+    bottom: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 256px;
   }
 }
 
@@ -101,6 +149,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 15px 0 15px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 24px;
+  }
 }
 
 .product__buy {
@@ -109,16 +162,22 @@
   height: 35px;
   margin-right: -9px;
 
-  &::after {
-    content: "";
-    display: block;
+  svg {
+    fill: $black;
+    opacity: 0.2;
     position: absolute;
-    background-repeat: no-repeat;
-    background-image: url("../img/header/cart.svg");
-    width: 20px;
-    height: 19px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) translateY(-10%);
+  }
+
+  &:hover svg {
+    fill: $accent-color;
+    opacity: 1;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+    fill: $accent-color;
   }
 }

@@ -11,16 +11,18 @@
       background-repeat: repeat-x;
       width: 100vw;
       height: 24px;
-      left: 0;
+      left: -10px;
       bottom: 114px;
       background-image: url("../img/zigzag-fill-desktop.svg");
+      background-position: center;
+      background-size: auto 100%;
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../img/zigzag-fill-desktop-real-desktop.svg");
+      background-image: url("../img/zigzag-fill-title.svg");
       height: 34px;
       bottom: 158px;
-      background-size: auto 35px;
+      left: -66px;
     }
   }
 
@@ -32,6 +34,20 @@
   @media (min-width: $desktop-width) {
     max-width: none;
   }
+
+  &--catalog {
+    margin: 0 auto;
+
+    &::after {
+      @media (min-width: $tablet-width) {
+        bottom: -13px;
+      }
+
+      @media (min-width: $desktop-width) {
+        bottom: 0;
+      }
+    }
+  }
 }
 
 .title__content {
@@ -41,7 +57,7 @@
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-  margin: 0 0 17px 0;
+  margin: 0 0 16px 0;
 
   @media (min-width: $tablet-width) {
     font-weight: 700;

@@ -9,15 +9,15 @@
     background-image: url("../img/zigzag-line-mobile.svg");
     width: 100vw;
     height: 6px;
-    left: 0;
     top: -1px;
-    background-position: 1px;
+    background-position: center;
+    background-size: auto 100%;
+    left: -8px;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/zigzag-line-desktop.svg");
       height: 17px;
       top: -42px;
-      background-position: 0;
       width: 100vw;
     }
 
