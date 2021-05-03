@@ -10,9 +10,9 @@
     width: 100vw;
     height: 6px;
     top: -1px;
-    background-position: center;
+    background-position: left calc(50% - 9px) top;
     background-size: auto 100%;
-    left: -8px;
+    left: 0;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/zigzag-line-desktop.svg");
@@ -216,6 +216,10 @@
 
 .contacts__button-text {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
