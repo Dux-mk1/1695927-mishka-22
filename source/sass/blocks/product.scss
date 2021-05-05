@@ -24,7 +24,6 @@
   padding: 25px 28px 0 28px;
   box-sizing: border-box;
   border: 1px solid $lines-color;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -35,7 +34,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 316px;
+    flex-grow: 1;
+    width: 100%;
     padding: 26px 28px 0 27px;
     min-height: 197px;
   }
@@ -116,6 +116,7 @@
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
+    margin: 0 0 12px 0;
   }
 }
 
@@ -132,9 +133,9 @@
   border-top: 1px solid $lines-color;
 
   @media (min-width: $tablet-width) {
-    width: 268px;
-    position: absolute;
-    bottom: -2px;
+    width: 100%;
+    padding-right: 5px;
+    margin-top: auto;
   }
 
   @media (min-width: $desktop-width) {

@@ -11,10 +11,10 @@
       background-repeat: repeat-x;
       width: 100vw;
       height: 24px;
-      left: -10px;
+      left: 0;
       bottom: 114px;
       background-image: url("../img/zigzag-fill-desktop.svg");
-      background-position: center;
+      background-position: left calc(50% - 9px) bottom;
       background-size: auto 100%;
     }
 
@@ -22,7 +22,6 @@
       background-image: url("../img/zigzag-fill-title.svg");
       height: 34px;
       bottom: 158px;
-      left: -66px;
     }
   }
 

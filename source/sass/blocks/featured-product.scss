@@ -13,9 +13,9 @@
     background-image: url("../img/zigzag-line-mobile.svg");
     width: 100vw;
     height: 6px;
-    left: -8px;
+    left: 0;
     bottom: -7px;
-    background-position: center;
+    background-position: left calc(50% - 9px) bottom;
     background-size: auto 100%;
 
     @media (min-width: $tablet-width) {

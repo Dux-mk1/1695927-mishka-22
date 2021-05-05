@@ -40,5 +40,9 @@
 
   &:last-child {
     margin: 0;
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 54px 0;
+    }
   }
 }
