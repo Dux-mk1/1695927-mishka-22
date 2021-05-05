@@ -35,7 +35,7 @@
   }
 
   &--previous {
-    background-image: url("../img/index-mobile/huge-arrow-left.svg");
+    background-image: url("../img/index/huge-arrow-left.svg");
     border-right: 1px solid $lines-color;
 
     @media (min-width: $tablet-width) {
@@ -44,6 +44,6 @@
   }
 
   &--next {
-    background-image: url("../img/index-mobile/huge-arrow-right.svg");
+    background-image: url("../img/index/huge-arrow-right.svg");
   }
 }

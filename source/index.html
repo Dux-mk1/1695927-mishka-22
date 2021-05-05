@@ -14,7 +14,11 @@
     <div class="page-header__wrapper">
       <div class="page-header__wrapper-top">
         <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/header/mishka-logo-mobile.svg" height="35" width="86" alt="Магазин вязанных изделий ручной работы Mishka" >
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/header/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header/mishka-logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/header/mishka-logo-mobile.svg" height="35" width="86" alt="Магазин вязанных изделий ручной работы Mishka" >
+          </picture>
         </a>
         <button class="page-header__toggle" type="button" aria-label="Открыть или закрыть меню"></button>
       </div>
@@ -112,7 +116,11 @@
             </tr>
           </table>
           <div class="featured-product__container-image">
-            <img class="featured-product__image" src="img/index-mobile/triple-set-mobile.jpg" alt="Три вязанные корзинки разного размера, две из которых серо-бирюзовые, а одна бело-розовая." width="260" height="315">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/index/triple-set-desktop.jpg 1x, img/index/triple-set-desktop@2x.jpg 2x, img/index/triple-set-desktop@4x.jpg 4x">
+              <source media="(min-width: 768px)" srcset="img/index/triple-set-tablet.jpg 1x, img/index/triple-set-tablet@2x.jpg 2x, img/index/triple-set-tablet@4x.jpg 4x">
+              <img class="featured-product__image" src="img/index/triple-set-mobile.jpg" alt="Три вязанные корзинки разного размера, две из которых серо-бирюзовые, а одна бело-розовая." width="260" height="315">
+            </picture>
           </div>
           <p class="featured-product__price">Цена: 990 руб.</p>
           <a class="button featured-product__button" href="#" aria-label="Добавить товар в корзину">
