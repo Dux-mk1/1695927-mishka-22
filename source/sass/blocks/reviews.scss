@@ -30,7 +30,7 @@
       position: absolute;
       width: 350px;
       height: 457px;
-      background-image: url("../img/index-mobile/review.jpg");
+      background-image: url("../img/index/review.jpg");
       background-repeat: no-repeat;
       left: -48px;
       top: -3px;
@@ -40,6 +40,14 @@
     @media (min-width: $desktop-width) {
       left: 0;
       top: 32px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/review@2x.jpg");
+    }
+
+    @media (min-resolution: 4dppx) {
+      background-image: url("../img/index/review@4x.jpg");
     }
   }
 

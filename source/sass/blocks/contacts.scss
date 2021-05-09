@@ -10,7 +10,7 @@
     width: 100vw;
     height: 6px;
     top: -1px;
-    background-position: left calc(50% - 9px) top;
+    background-position: left 50% top;
     background-size: auto 100%;
     left: 0;
 
@@ -104,7 +104,7 @@
       content: "";
       position: absolute;
       background-repeat: no-repeat;
-      background-image: url("../img/index-mobile/flag.svg");
+      background-image: url("../img/index/flag.svg");
       right: 3px;
       top: -23px;
       width: 47px;
