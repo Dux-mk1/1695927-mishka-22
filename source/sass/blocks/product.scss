@@ -91,6 +91,16 @@
 .product__image {
   background-color: $special-background-color;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
 }
 
 .product__title {
