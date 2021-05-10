@@ -5,30 +5,28 @@
   background-color: $special-background-color;
   background-repeat: no-repeat;
   background-image: url("../img/index/hero-mobile.jpg");
+  background-size: 320px 373px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/index/hero-mobile@2x.jpg");
-    background-size: 320px 373px;
   }
 
   @media (min-resolution: 4dppx) {
     background-image: url("../img/index/hero-mobile@4x.jpg");
-    background-size: 320px 373px;
   }
 
   @media (min-width: $tablet-width) {
     border-top: 1px solid $lines-color;
     background-image: url("../img/index/hero-tablet-desktop.jpg");
     background-position: 50% -1px;
+    background-size: 768px 746px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/hero-tablet-desktop@2x.jpg");
-      background-size: 768px 746px;
     }
 
     @media (min-resolution: 4dppx) {
       background-image: url("../img/index/hero-tablet-desktop@4x.jpg");
-      background-size: 768px 746px;
     }
   }
 }

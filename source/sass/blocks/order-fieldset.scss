@@ -300,13 +300,13 @@
     background-repeat: no-repeat;
     width: 42px;
     height: 42px;
-    background-image: url("../img/form-mobile/radio.svg");
+    background-image: url("../img/form/radio.svg");
     left: 0;
     top: 50%;
     transform: translateY(-53%);
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/form-mobile/radio-checkbox-52px/radio.svg");
+      background-image: url("../img/form/radio-checkbox-52px/radio.svg");
       width: 52px;
       height: 52px;
       left: 2px;
@@ -318,50 +318,50 @@
 
 .order-fieldset__radio:checked + .order-fieldset__label {
   &::before {
-    background-image: url("../img/form-mobile/radio-active.svg");
+    background-image: url("../img/form/radio-active.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/form-mobile/radio-checkbox-52px/radio-active.svg");
+      background-image: url("../img/form/radio-checkbox-52px/radio-active.svg");
     }
   }
 }
 
 .order-fieldset__radio:not(:disabled):not(:checked) + .order-fieldset__label {
   &:hover::before {
-    background-image: url("../img/form-mobile/radio-hover.svg");
+    background-image: url("../img/form/radio-hover.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/form-mobile/radio-checkbox-52px/radio-hover.svg");
+      background-image: url("../img/form/radio-checkbox-52px/radio-hover.svg");
     }
   }
 }
 
 .order-fieldset__radio:not(:disabled):checked + .order-fieldset__label {
   &:hover::before {
-    background-image: url("../img/form-mobile/radio-active-hover.svg");
+    background-image: url("../img/form/radio-active-hover.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/form-mobile/radio-checkbox-52px/radio-active-hover.svg");
+      background-image: url("../img/form/radio-checkbox-52px/radio-active-hover.svg");
     }
   }
 }
 
 .order-fieldset__radio:not(:disabled):not(:checked) + .order-fieldset__label:active {
   &::before {
-    background-image: url("../img/form-mobile/radio-down.svg");
+    background-image: url("../img/form/radio-down.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/form-mobile/radio-checkbox-52px/radio-down.svg");
+      background-image: url("../img/form/radio-checkbox-52px/radio-down.svg");
     }
   }
 }
 
 .order-fieldset__radio:not(:disabled):checked + .order-fieldset__label:active {
   &::before {
-    background-image: url("../img/form-mobile/radio-active-down.svg");
+    background-image: url("../img/form/radio-active-down.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/form-mobile/radio-checkbox-52px/radio-active-down.svg");
+      background-image: url("../img/form/radio-checkbox-52px/radio-active-down.svg");
     }
   }
 }
@@ -381,12 +381,12 @@
     background-repeat: no-repeat;
     width: 38px;
     height: 38px;
-    background-image: url("../img/form-mobile/checkbox.svg");
+    background-image: url("../img/form/checkbox.svg");
     left: 0;
     top: 1px;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/form-mobile/radio-checkbox-52px/checkbox.svg");
+      background-image: url("../img/form/radio-checkbox-52px/checkbox.svg");
       width: 52px;
       height: 52px;
       left: -2px;
@@ -404,50 +404,50 @@
 
 .order-fieldset__checkbox:checked + .order-fieldset__label {
   &::before {
-    background-image: url("../img/form-mobile/checkbox-active.svg");
+    background-image: url("../img/form/checkbox-active.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/form-mobile/radio-checkbox-52px/checkbox-active.svg");
+      background-image: url("../img/form/radio-checkbox-52px/checkbox-active.svg");
     }
   }
 }
 
 .order-fieldset__checkbox:not(:disabled):not(:checked) + .order-fieldset__label {
   &:hover::before {
-    background-image: url("../img/form-mobile/checkbox-hover.svg");
+    background-image: url("../img/form/checkbox-hover.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/form-mobile/radio-checkbox-52px/checkbox-hover.svg");
+      background-image: url("../img/form/radio-checkbox-52px/checkbox-hover.svg");
     }
   }
 }
 
 .order-fieldset__checkbox:not(:disabled):checked + .order-fieldset__label {
   &:hover::before {
-    background-image: url("../img/form-mobile/checkbox-active-hover.svg");
+    background-image: url("../img/form/checkbox-active-hover.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/form-mobile/radio-checkbox-52px/checkbox-active-hover.svg");
+      background-image: url("../img/form/radio-checkbox-52px/checkbox-active-hover.svg");
     }
   }
 }
 
 .order-fieldset__checkbox:not(:disabled):not(:checked) + .order-fieldset__label:active {
   &::before {
-    background-image: url("../img/form-mobile/checkbox-down.svg");
+    background-image: url("../img/form/checkbox-down.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/form-mobile/radio-checkbox-52px/checkbox-down.svg");
+      background-image: url("../img/form/radio-checkbox-52px/checkbox-down.svg");
     }
   }
 }
 
 .order-fieldset__checkbox:not(:disabled):checked + .order-fieldset__label:active {
   &::before {
-    background-image: url("../img/form-mobile/checkbox-active-down.svg");
+    background-image: url("../img/form/checkbox-active-down.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/form-mobile/radio-checkbox-52px/checkbox-active-down.svg");
+      background-image: url("../img/form/radio-checkbox-52px/checkbox-active-down.svg");
     }
   }
 }
