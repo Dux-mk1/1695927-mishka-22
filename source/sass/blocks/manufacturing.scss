@@ -67,7 +67,7 @@
     position: absolute;
     display: block;
     background-repeat: no-repeat;
-    background-image: url("../img/catalog-mobile/video-icon.svg");
+    background-image: url("../img/catalog/video-icon.svg");
     width: 32px;
     height: 22px;
     top: 34px;
@@ -103,8 +103,19 @@
   }
 }
 
+.manufacturing__image {
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
+  }
+}
+
 .manufacturing__start-video {
-  background-image: url("../img/catalog-mobile/play.svg");
+  background-image: url("../img/catalog/play.svg");
   position: absolute;
   top: 50%;
   left: 50%;
