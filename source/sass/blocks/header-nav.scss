@@ -3,6 +3,10 @@
   font-size: 17px;
   line-height: 24px;
 
+  &--closed {
+    display: none;
+  }
+
   &--primary {
     @media (min-width: $tablet-width) {
       order: 2;

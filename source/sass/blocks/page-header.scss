@@ -83,6 +83,10 @@
   margin: 0;
   padding: 0;
 
+  &--closed {
+    background-image: url("../img/header/menu.svg");
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
