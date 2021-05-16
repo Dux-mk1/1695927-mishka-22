@@ -17,6 +17,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1150px;
+    max-width: none;
   }
 }
 
@@ -76,7 +77,7 @@
   border: none;
   width: 35px;
   height: 35px;
-  background-image: url("../img/header/menu-close.svg");
+  background-image: url("../img/header/menu.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   background-position: 7px 7px;
@@ -84,7 +85,11 @@
   padding: 0;
 
   &--closed {
-    background-image: url("../img/header/menu.svg");
+    background-image: url("../img/header/menu-close.svg");
+  }
+
+  &--mojs {
+    display: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -101,12 +106,10 @@
   width: 259px;
   height: 0;
   box-sizing: border-box;
-
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: $tablet-width) {
+    display: block;
     order: 3;
     margin-right: 50px;
     z-index: 1;

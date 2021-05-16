@@ -3,7 +3,12 @@
   font-size: 17px;
   line-height: 24px;
 
-  &--closed {
+  &--opened {
+    display: block;
+  }
+
+  &--closed,
+  &--nojs {
     display: none;
   }
 
@@ -18,6 +23,7 @@
       position: absolute;
       left: 0;
       bottom: -22px;
+      display: block;
     }
 
     @media (min-width: $desktop-width) {
@@ -36,6 +42,7 @@
       order: 1;
       width: 399px;
       background-color: $background-color;
+      display: block;
     }
 
     @media (min-width: $desktop-width) {

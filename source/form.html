@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.min.css" rel="stylesheet preload">
+  <link href="css/style.min.css" rel="stylesheet preload" as="style">
   <link rel="icon" href="img/fav/152.ico">
   <link rel="icon" href="img/fav/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/fav/152.png">
@@ -20,9 +20,9 @@
           <img class="page-header__logo-image" src="img/header/mishka-logo-mobile.svg" height="35" width="86" alt="Магазин вязанных изделий ручной работы Mishka" >
         </picture>
       </a>
-      <button class="page-header__toggle" type="button" aria-label="Открыть или закрыть меню"></button>
+      <button class="page-header__toggle page-header__toggle--nojs" type="button" aria-label="Открыть или закрыть меню"></button>
     </div>
-    <nav class="header-nav header-nav--primary">
+    <nav class="header-nav header-nav--closed header-nav--nojs header-nav--primary">
       <ul class="header-nav__list site-list site-list--primary">
         <li class="site-list__item site-list__item--catalog">
           <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -32,7 +32,7 @@
         </li>
       </ul>
     </nav>
-    <nav class="header-nav header-nav--secondary">
+    <nav class="header-nav header-nav--closed header-nav--nojs header-nav--secondary">
       <ul class="header-nav__list site-list site-list--secondary">
         <li class="site-list__item site-list__item--search">
           <a class="site-list__link site-list__link--search" href="#">
@@ -51,7 +51,7 @@
         </li>
       </ul>
     </nav>
-    <nav class="header-nav header-nav--tertiary">
+    <nav class="header-nav header-nav--closed header-nav--nojs header-nav--tertiary">
       <ul class="header-nav__list site-list site-list--tertiary">
         <li class="site-list__item site-list__item--new">
           <a class="site-list__link site-list__link--new" href="#">Новые поступления</a>

@@ -13,20 +13,19 @@
   box-sizing: border-box;
 
   &--open {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .modal__wrapper {
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  display: flex;
   width: 320px;
   padding: 0 29px 0 31px;
   min-height: 336px;
   margin: 0;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-  transform: translate(-50%, -50%);
   background-color: $background-color;
   box-sizing: border-box;
   border: 1px solid $border-modal;
