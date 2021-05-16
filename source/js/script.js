@@ -32,10 +32,12 @@ for (let item of navMain) {
 
 const buttonBuy = document.querySelectorAll('.product__buy');
 const modalBuy = document.querySelector('.modal');
+const modalClick = document.querySelector('.modal__click')
 
 for (let item of buttonBuy) {
   item.addEventListener('click', function () {
     modalBuy.classList.add('modal--open')
+    modalClick.classList.add('modal--open')
   });
 }
 
@@ -44,3 +46,7 @@ document.addEventListener('keydown', function (evt) {
     modalBuy.classList.remove('modal--open');
   }
 });
+
+modalClick.addEventListener('click', function () {
+  modalBuy.classList.remove('modal--open')
+})
