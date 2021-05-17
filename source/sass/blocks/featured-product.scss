@@ -15,7 +15,7 @@
     height: 6px;
     left: 0;
     bottom: -7px;
-    background-position: left 50%  bottom;
+    background-position: left calc(50% - 9px)  bottom;
     background-size: auto 100%;
 
     @media (min-width: $tablet-width) {
