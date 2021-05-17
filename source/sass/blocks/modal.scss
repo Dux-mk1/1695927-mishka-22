@@ -14,8 +14,6 @@
 
   &--open {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -31,7 +29,7 @@
   width: 320px;
   padding: 0 29px 0 31px;
   min-height: 336px;
-  margin: 0;
+  margin: auto;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   background-color: $background-color;
   box-sizing: border-box;

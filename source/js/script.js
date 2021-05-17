@@ -37,7 +37,6 @@ const modalClick = document.querySelector('.modal__click')
 for (let item of buttonBuy) {
   item.addEventListener('click', function () {
     modalBuy.classList.add('modal--open')
-    modalClick.classList.add('modal--open')
   });
 }
 
