@@ -2,14 +2,15 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  display: none;
 
-  &--opened {
-    display: block;
+  &--closed {
+    display: none;
   }
 
-  &--closed,
+  &--opened,
   &--nojs {
-    display: none;
+    display: block;
   }
 
   &--primary {
@@ -22,7 +23,7 @@
       height: 0;
       position: absolute;
       left: 0;
-      bottom: -2px;
+      bottom: -22px;
       display: block;
     }
 

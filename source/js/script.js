@@ -2,8 +2,11 @@
 
 const navMain = document.querySelectorAll('.header-nav');
 const navToggle = document.querySelector('.page-header__toggle');
+const logo = document.querySelector('.page-header__logo');
 
-navToggle.classList.remove('page-header__toggle--nojs')
+logo.classList.remove('page-header__logo--nojs')
+navToggle.classList.add('page-header__toggle--js')
+
 
 for (let item of navMain) {
   item.classList.remove('header-nav--nojs');
