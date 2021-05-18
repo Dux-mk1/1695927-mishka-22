@@ -123,9 +123,7 @@
     color: $black-hover;
   }
 
-  &:active,
-  &--search:active .site-list__search-path,
-  &--cart:active .site-list__cart-path {
+  &:active {
     opacity: 0.3;
   }
 
