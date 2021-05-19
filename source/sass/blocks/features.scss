@@ -3,16 +3,26 @@
   font-size: 15px;
   line-height: 24px;
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   border-collapse: collapse;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 108px;
+    margin-bottom: 104px;
+  }
+}
+
+.features tbody {
+  @media (min-width: $tablet-width) {
+    width: 292px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 291px;
   }
 }
 
@@ -24,7 +34,9 @@
 
 .features__row {
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 7px;
+  border-bottom: 1px solid $lines-color;
+  padding: 0 0 7px 0;
 }
 
 .features__table-description {

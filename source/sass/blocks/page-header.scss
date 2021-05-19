@@ -48,6 +48,10 @@
   display: flex;
   margin: 0 auto;
 
+  &--nojs {
+    margin: 0 auto 0 55px;
+  }
+
   &:hover {
     opacity: 0.6;
   }
@@ -83,13 +87,14 @@
   background-position: 7px 7px;
   margin: 0;
   padding: 0;
+  display: none;
 
   &--closed {
     background-image: url("../img/header/menu-close.svg");
   }
 
-  &--mojs {
-    display: none;
+  &--js {
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
@@ -107,6 +112,7 @@
   height: 0;
   box-sizing: border-box;
   display: none;
+  color: $special-black;
 
   @media (min-width: $tablet-width) {
     display: block;
