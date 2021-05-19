@@ -4,8 +4,8 @@ const navMain = document.querySelectorAll('.header-nav');
 const navToggle = document.querySelector('.page-header__toggle');
 const logo = document.querySelector('.page-header__logo');
 
-logo.classList.remove('page-header__logo--nojs');
-navToggle.classList.add('page-header__toggle--js');
+logo.classList.remove('page-header__logo--nojs')
+navToggle.classList.add('page-header__toggle--js')
 
 
 for (let item of navMain) {
